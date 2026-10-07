@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f5ff;
+    color: #2d2640;
+    line-height: 1.6;
+}
+
+/* Üst Menü */
+
+header {
+    background-color: #5b3f8c;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e5d5ff;
+}
+
+/* Bölümler */
+
+section {
+    min-height: 70vh;
+    padding: 100px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #5b3f8c;
+}
+
+/* Ana Sayfa */
+
+#anasayfa {
+    background-color: #eee5ff;
+    text-align: center;
+    min-height: 90vh;
+}
+
+#anasayfa h2 {
+    font-size: 50px;
+    color: #4b3275;
+}
+
+#anasayfa p {
+    font-size: 20px;
+    max-width: 650px;
+    margin: 0 auto;
+    color: #5c536b;
+}
+
+/* Hakkımda */
+
+#hakkimda {
+    background-color: #ffffff;
+}
+
+#hakkimda p {
+    max-width: 750px;
+    font-size: 18px;
+    color: #514960;
+}
+
+/* Yetenekler */
+
+#yetenekler {
+    background-color: #f8f5ff;
+}
+
+#yetenekler ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#yetenekler li {
+    background-color: #7b5bb2;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+#yetenekler li:hover {
+    background-color: #5b3f8c;
+    transform: translateY(-3px);
+}
+
+/* Projeler */
+
+#projeler {
+    background-color: #ffffff;
+}
+
+#projeler div {
+    background-color: #f0eaff;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    max-width: 700px;
+    border-left: 5px solid #7b5bb2;
+    transition: 0.3s;
+}
+
+#projeler div:hover {
+    transform: translateX(5px);
+}
+
+#projeler h3 {
+    margin-bottom: 10px;
+    color: #5b3f8c;
+}
+
+/* İletişim */
+
+#iletisim {
+    background-color: #f8f5ff;
+}
+
+#iletisim p {
+    font-size: 18px;
+    color: #514960;
+}
+
+/* Alt Bilgi */
+
+footer {
+    background-color: #4b3275;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+/* Yetenek Seviyeleri */
+
+.yetenek {
+    max-width: 700px;
+    margin-bottom: 25px;
+}
+
+.yetenek-baslik {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.progress {
+    width: 100%;
+    height: 12px;
+    background-color: #ddd5eb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #7b5bb2;
+    border-radius: 10px;
+}
+/* Eğitim */
+
+#egitim {
+    background-color: #eee5ff;
+}
+
+.egitim-karti {
+    max-width: 750px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    border-left: 5px solid #7b5bb2;
+}
+
+.egitim-karti h3 {
+    color: #5b3f8c;
+    margin-bottom: 10px;
+}
+
+.egitim-karti span {
+    display: inline-block;
+    margin: 10px 0;
+    color: #7b5bb2;
+    font-weight: bold;
+}
+/* Tema Butonu */
+
+#temaButonu {
+    border: none;
+    background-color: white;
+    color: #5b3f8c;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+#temaButonu:hover {
+    transform: scale(1.1);
+}
+
+/* Karanlık Tema */
+
+.dark-mode {
+    background-color: #181522;
+    color: #eeeeee;
+}
+
+.dark-mode header {
+    background-color: #211b2d;
+}
+
+.dark-mode #anasayfa {
+    background-color: #241d32;
+}
+
+.dark-mode #anasayfa h2 {
+    color: #d9c5ff;
+}
+
+.dark-mode #anasayfa p {
+    color: #ddd5e8;
+}
+
+.dark-mode #hakkimda {
+    background-color: #181522;
+}
+
+.dark-mode #hakkimda p {
+    color: #ddd5e8;
+}
+
+.dark-mode #yetenekler {
+    background-color: #181522;
+}
+
+.dark-mode #egitim {
+    background-color: #241d32;
+}
+
+.dark-mode .egitim-karti {
+    background-color: #2b2438;
+    color: #eeeeee;
+}
+
+.dark-mode #projeler {
+    background-color: #181522;
+}
+
+.dark-mode #projeler div {
+    background-color: #2b2438;
+}
+
+.dark-mode #iletisim {
+    background-color: #181522;
+}
+
+.dark-mode #iletisim p {
+    color: #ddd5e8;
+}
+
+.dark-mode footer {
+    background-color: #211b2d;
+}
